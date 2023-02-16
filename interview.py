@@ -93,7 +93,7 @@ def isFloat(value: str) -> bool:
     
 def parseInt(value: str) -> int:
 
-    if value[len(value) - 1 == "i"]:
+    if value[len(value) - 1] == "i":
         value = value[0:value.index("i")]
 
     return int(value)
