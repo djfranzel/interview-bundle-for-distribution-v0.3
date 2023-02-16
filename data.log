@@ -1,0 +1,7 @@
+weather,state=NH,region=east temperature=65.4 1556813561098000000
+weather,state=CA,region=west temperature=67.8 1556813561096000000
+weather,state=CA,region=west temperature=34.5 1556813561099000000
+weather,state=FL,region=south temperature=98.5 1556813561098760000
+weather,state=FL,region=south temperature=102.1,humidity=98 1556813561008000000
+weather,state=FL,region=south temperature="☀️",humidity=94.1 1556813463008000000
+weather,state=FL,region=south temperature=102.1,humidity=98.0 1556813561008000000
