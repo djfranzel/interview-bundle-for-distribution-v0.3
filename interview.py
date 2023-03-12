@@ -46,7 +46,7 @@ def line_protocol_parser(
 ) -> tuple([str, dict[str, str], dict[str, Any], datetime.datetime]):
     
     line = line.split()
-    measurement = line[0].split(",")[0]
+    measurement = line[0].split(',')[0]
     tagSet = line[0][len(measurement)+1:len(line[0])]
     fieldSet = line[1]
     timeStamp = line[2]
@@ -59,10 +59,10 @@ def line_protocol_parser(
 def extractKeyValuePairs(stringSet: str) -> dict[str, str]:
 
     keyValuePairs = {}
-    keyValueList = stringSet.split(",")
+    keyValueList = stringSet.split(',')
 
     for subString in keyValueList:
-        temp = subString.split("=")
+        temp = subString.split('=')
 
         key = temp[0]
         value = temp[1]
@@ -93,8 +93,8 @@ def isFloat(value: str) -> bool:
     
 def parseInt(value: str) -> int:
 
-    if value[len(value) - 1] == "i":
-        value = value[0:value.index("i")]
+    if value[len(value) - 1] == 'i':
+        value = value[0:value.index('i')]
 
     return int(value)
 
@@ -109,5 +109,5 @@ def main() -> int:
     return
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())
